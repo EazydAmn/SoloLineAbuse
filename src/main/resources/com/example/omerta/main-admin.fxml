@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.omerta.MainAdminController">
+   <children>
+      <Button fx:id="product" alignment="CENTER" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#products" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Товары" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="history" layoutY="100.0" prefHeight="500.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3; -fx: 0;">
+        <columns>
+          <TableColumn fx:id="fio" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="ФИО" />
+            <TableColumn fx:id="clientCategory" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Категория клиента" />
+            <TableColumn fx:id="login" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Логин" />
+            <TableColumn fx:id="password" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Пароль" />
+            <TableColumn fx:id="email" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Почта" />
+            <TableColumn fx:id="telephone" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Телефон" />
+            <TableColumn fx:id="lastEnter" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Последний вход" />
+            <TableColumn fx:id="typeEnter" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" text="Тип входа" />
+        </columns>
+      </TableView>
+      <Button fx:id="reload" alignment="CENTER" layoutX="879.0" layoutY="18.0" mnemonicParsing="false" onAction="#reloadHistory" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Обновить" AnchorPane.rightAnchor="220.0">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" alignment="CENTER" layoutX="1016.0" layoutY="18.0" mnemonicParsing="false" onAction="#logOut" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Выйти" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

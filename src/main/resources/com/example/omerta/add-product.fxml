@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.omerta.AddProductConnector">
+   <children>
+      <ImageView fx:id="logo" fitHeight="225.0" fitWidth="225.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" />
+      <Text layoutX="328.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление товара" AnchorPane.topAnchor="44.55999946594238">
+         <font>
+            <Font name="Rubik-Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="add" alignment="CENTER" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="87.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Добавить" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="661.0">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" alignment="CENTER" layoutX="14.0" layoutY="387.0" mnemonicParsing="false" onAction="#clearProduct" prefHeight="87.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Очистить" AnchorPane.bottomAnchor="126.0">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id" disable="true" editable="false" layoutX="297.0" layoutY="127.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.topAnchor="125.0" />
+      <Text layoutX="297.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="297.0" layoutY="197.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.topAnchor="195.0" />
+      <Text layoutX="297.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название:" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="count" layoutX="297.0" layoutY="267.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.topAnchor="265.0" />
+      <Text layoutX="297.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Общее количество:" AnchorPane.topAnchor="245.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cost" layoutX="297.0" layoutY="337.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.topAnchor="335.0" />
+      <Text layoutX="297.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стоимость:" AnchorPane.topAnchor="315.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="img" layoutX="297.0" layoutY="407.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.topAnchor="405.0" />
+      <Text layoutX="297.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изображение:" AnchorPane.topAnchor="385.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="desc" layoutX="297.0" layoutY="478.0" prefHeight="116.0" prefWidth="266.0" AnchorPane.topAnchor="475.0" />
+      <Text layoutX="297.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание:" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="category" layoutX="681.0" layoutY="125.0" prefHeight="25.0" prefWidth="180.0" promptText="Выберите категорию..." />
+      <Text layoutX="681.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Категория:">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="681.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Редкость:">
+         <font>
+            <Font name="Rubik-Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="rarity" layoutX="681.0" layoutY="265.0" prefHeight="25.0" prefWidth="180.0" promptText="Выберите редкость..." />
+      <Button fx:id="back" alignment="CENTER" layoutX="14.0" layoutY="490.0" mnemonicParsing="false" onAction="#back" prefHeight="87.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #333333; -fx-border-width: 3; -fx-border-radius: 10;" text="Назад">
+         <font>
+            <Font name="Lato Semibold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

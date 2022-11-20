@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="225.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.omerta.ItemController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="225.0" prefWidth="688.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="225.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox>
+               <children>
+                  <Label fx:id="nameLabel" prefHeight="33.0" prefWidth="413.0" text="Name">
+                     <font>
+                        <Font name="Rubik-Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="descLabel" alignment="TOP_LEFT" prefHeight="111.0" prefWidth="434.0" text="Desc">
+                     <font>
+                        <Font name="Rubik-Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="51.0" prefWidth="520.0">
+                     <children>
+                        <Label fx:id="catLabel" prefHeight="23.0" prefWidth="141.0" text="Category">
+                           <font>
+                              <Font name="Rubik-Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ratLabel" prefHeight="23.0" prefWidth="114.0" text="Rarity">
+                           <font>
+                              <Font name="Rubik-Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="costLabel" prefHeight="23.0" prefWidth="94.0" text="Cost">
+                           <font>
+                              <Font name="Rubik-Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="46.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3; -fx-border-radius: 10;" text="+">
+                           <font>
+                              <Font name="Rubik-Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
